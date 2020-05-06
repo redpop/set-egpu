@@ -179,7 +179,7 @@ toggle_gpu_pref() {
   try
     tell application \"Finder\" to open information window of appFile
     tell application \"System Events\" to tell process \"Finder\"
-      set eGPUBox to checkbox \"Prefer External GPU\" of scroll area 1 of window 1
+      set eGPUBox to checkbox \"Externe GPU bevorzugen\" of scroll area 1 of window 1
       set status to value of eGPUBox as boolean
       if status is ${TOGGLE} then click eGPUBox
       tell application \"Finder\" to close information window of appFile
